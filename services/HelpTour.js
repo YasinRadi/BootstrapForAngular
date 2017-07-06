@@ -6,7 +6,7 @@ angular.module('myNetCMSApp')
 		/**
 		 *	Tour files SharePoint list base path.
 		 */
-		const BASE_PATH = '/sites/MyNetCMSPROD/Help%20Tours/';
+		const BASE_PATH = '';
 
 		/**
      *  Default template.
