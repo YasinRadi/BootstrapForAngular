@@ -1,0 +1,30 @@
+.popover-title {
+	font-weight: bold;
+	background: #b7b7b7;
+	font-family: "Open sans", sans-serif;
+}
+
+.popover-content {
+	font-size: 12px;
+	font-family: "Open sans", sans-serif;
+}
+
+[data-role="end"] {
+	background: #ffcc00!important;
+}
+
+.btn-help {
+	display: inline-block;
+	border: none;
+}
+
+.profSP {
+	margin: 14px 0 0 0;
+	float: left;
+	background: #ffcc00;
+}
+
+.sideBarHelp {
+	float: right;
+	background: #E4E4E4;
+}
