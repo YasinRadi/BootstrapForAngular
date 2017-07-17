@@ -11,8 +11,7 @@ angular.module('myNetCMSApp')
 		/**
      *  Default template.
      */
-    const DEFAULT_TEMPLATE = "<div ng-bind-html=\""
-							+	"<div class='popover tour'>"
+    const DEFAULT_TEMPLATE = "<div class='popover tour'>"
               + "<div class='arrow'></div>"
               + "<h3 class='popover-title'></h3>"
               + "<div class='popover-content'></div>"
@@ -21,7 +20,7 @@ angular.module('myNetCMSApp')
               + "<button class='btn btn-default' data-role='next'>Next »</button>"
               + "<button class='btn btn-default' data-role='end'>End tour</button>"
               + "</div>"
-              + "</div>\"></div>";
+              + "</div>";
 
 		/**
 		 *	Help tours container object.
