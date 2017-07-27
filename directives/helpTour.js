@@ -21,7 +21,7 @@ angular.module('myNetCMSApp')
          */
         link: function($scope, element, attrs) {
             /**
-             *  Help Tour initializaiton and event attaching.
+             *  Help Tour initialization and event attaching.
              */
             HelpTour.init($scope.id, $scope.sel);
         }
