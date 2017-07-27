@@ -2,7 +2,7 @@
 
 angular.module('myNetCMSApp')
 
-    .service('HelpTour', ['$http', '$sce', function ($http, $sce) {
+    .service('HelpTour', ['$http', function ($http) {
         /**
          *    Tour files SharePoint list base path.
          */
@@ -55,7 +55,7 @@ angular.module('myNetCMSApp')
          *    @param id {String}
          *    @param selector {String}
          */
-        this.init = function (id, selector, trustedHtml) {
+        this.init = function (id, selector) {
             const self = this;
 
             /**
@@ -149,7 +149,7 @@ angular.module('myNetCMSApp')
                 duration: cnf.duration || false,
                 delay: cnf.delay || false,
                 basePath: cnf.basePath || '',
-                template: cnf.template || DEFAULT_TEMPLATE,
+                template: cnf.template || DEFAULT_TEMPLATE
             });
 
             /**
@@ -166,7 +166,6 @@ angular.module('myNetCMSApp')
          *    @return tour {Tour|Boolean}
          */
         this.getTour = function (id) {
-            const len = Object.keys(HELP_TOURS).length;
             for (var k in HELP_TOURS) {
                 if (HELP_TOURS[k]._options.name === id)
                     return HELP_TOURS[k];
